@@ -1,0 +1,33 @@
+<html lang="en">
+	<head>
+		<link href="css/messages.css" rel="stylesheet"></link>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/messenger.js"></script>
+	</head>
+	<body>
+		<div class="tab inbox">Inbox</div>
+		<div class="tab sent">Sent Mail</div>
+		<div class="tab compose">Compose New Mail</div>
+		<div class="inbox container">
+			<button type="button" class="delete inbox">Delete</button>
+			<button type="button" class="refresh inbox">Refresh</button>
+			<button type="button" class="next inbox">Next Page</button>
+			<button type="button" class="prev inbox">Previous Page</button>
+			<div class="inbox content">
+			</div>
+		</div>
+		<div class="sent container">
+			<button type="button" class="delete sent">Delete</button>
+			<button type="button" class="refresh sent">Refresh</button>
+			<button type="button" class="next sent">Next Page</button>
+			<button type="button" class="prev sent">Previous Page</button>
+			<div class="sent content">
+			</div>
+		</div>
+		<div class="compose container">
+			<div placeholder="Receiver's ID"contenteditable="true" class="compose receiver"></div>
+			<div placeholder="Write your message here"contenteditable="true" class="compose content"></div>
+			<button class="compose send">Send</button>
+		</div>
+	</body>
+</html>
